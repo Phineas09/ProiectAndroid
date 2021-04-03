@@ -136,10 +136,10 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonUserName" />
+        app:layout_constraintTop_toBottomOf="@+id/userNameRegister" />
 
     <EditText
-        android:id="@+id/editTextTextPersonUserName"
+        android:id="@+id/userNameRegister"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="24dp"
@@ -182,7 +182,8 @@
 
             android:gravity="center_horizontal|bottom"
             android:paddingRight="50sp"
-            android:text="Male" />
+            android:text="Male"
+            android:layout_width="wrap_content" />
 
         <RadioButton
             android:id="@+id/registerFemaleRadio"
@@ -192,7 +193,8 @@
             android:drawableBottom="?android:attr/listChoiceIndicatorSingle"
             android:gravity="center_horizontal|bottom"
             android:paddingLeft="50sp"
-            android:text="Female" />
+            android:text="Female"
+            android:layout_width="wrap_content" />
 
     </RadioGroup>
 
@@ -219,6 +221,7 @@
         android:layout_marginRight="32dp"
         android:background="@drawable/rounded_button"
         android:text="Register"
+        android:onClick="onRegisterButtonClick"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/registerRadioGroup" />

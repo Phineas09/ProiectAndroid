@@ -9,7 +9,7 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.ProiectAndroid">
-        <activity android:name=".MainActivity"
+        <activity android:name=".LoadingActivity"
             android:theme="@style/Theme.ProiectAndroid.NoActionBar">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -17,18 +17,17 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-
-       <!-- <activity
+        <activity android:name=".MainActivity" />
+        <!--
+         <activity
             android:name=".BottomNavigationActivity"
-            android:label="@string/title_activity_bottom_navigation"></activity> -->
+            android:label="@string/title_activity_bottom_navigation"></activity>
+        -->
         <activity
-            android:name=".LoginRegisterActivity"
-            android:label="@string/title_activity_login_register"
+            android:name=".LoginActivity"
             android:theme="@style/Theme.ProiectAndroid.NoActionBar">
 
         </activity>
-        <activity android:name=".RegisterActivity"></activity>
-        <activity android:name=".LoginActivity" />
     </application>
 
 </manifest>
