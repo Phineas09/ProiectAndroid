@@ -1,4 +1,4 @@
-package ro.mta.proiect.fragments;
+package ro.mta.proiect.ui.fragments;
 
 import android.os.Bundle;
 

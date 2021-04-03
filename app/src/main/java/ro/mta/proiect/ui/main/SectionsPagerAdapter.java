@@ -9,8 +9,8 @@ import androidx.fragment.app.FragmentManager;
 import androidx.fragment.app.FragmentPagerAdapter;
 
 import ro.mta.proiect.R;
-import ro.mta.proiect.fragments.LoginFragment;
-import ro.mta.proiect.fragments.RegisterFragment;
+import ro.mta.proiect.ui.fragments.LoginFragment;
+import ro.mta.proiect.ui.fragments.RegisterFragment;
 
 /**
  * A [FragmentPagerAdapter] that returns a fragment corresponding to

@@ -1,4 +1,4 @@
-package ro.mta.proiect.fragments;
+package ro.mta.proiect.ui.fragments;
 
 import android.os.Bundle;
 
@@ -63,6 +63,7 @@ public class LoginFragment extends Fragment {
         // Inflate the layout for this fragment
         return inflater.inflate(R.layout.fragment_login, container, false);
     }
+
 
 
 
