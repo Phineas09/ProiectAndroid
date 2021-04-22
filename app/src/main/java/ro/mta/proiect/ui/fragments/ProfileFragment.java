@@ -1,18 +1,17 @@
 package ro.mta.proiect.ui.fragments;
 
 import android.os.Bundle;
-
-import androidx.fragment.app.Fragment;
-
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
+import androidx.annotation.Nullable;
+import androidx.fragment.app.Fragment;
 import ro.mta.proiect.R;
 
-public class RegisterFragment extends Fragment {
+public class ProfileFragment extends Fragment {
 
-    public RegisterFragment() {
+    public ProfileFragment() {
     }
 
     @Override
@@ -20,9 +19,12 @@ public class RegisterFragment extends Fragment {
         super.onCreate(savedInstanceState);
     }
 
+    @Nullable
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
-        return inflater.inflate(R.layout.fragment_register, container, false);
+        // Inflate the layout for this fragment
+        return inflater.inflate(R.layout.fragment_profile, container, false);
     }
+
 }
