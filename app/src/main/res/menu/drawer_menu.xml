@@ -22,12 +22,12 @@
         android:icon="@drawable/ic_baseline_log_out"
         android:title="Logout" />
 
-    <item android:title="Communicate">
+    <item android:title="Administrator">
         <menu>
             <item
-                android:id="@+id/nav_share"
-                android:icon="@drawable/ic_baseline_share"
-                android:title="Share" />
+                android:id="@+id/nav_admin"
+                android:icon="@drawable/ic_baseline_admin_panel"
+                android:title="Admin Area" />
         </menu>
     </item>
 

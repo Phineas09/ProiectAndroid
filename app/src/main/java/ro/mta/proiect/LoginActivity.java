@@ -119,6 +119,8 @@ public class LoginActivity extends AppCompatActivity {
 
                         //And destroy the current one!!@#!
                         Intent intent = new Intent(this, MainActivity.class);// New activity
+                        intent.putExtra(GlobalFunctions.CURRENT_USER, currentUser);
+                        intent.putExtra(GlobalFunctions.USER_ID, entry.getKey());
                         intent.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
                         startActivity(intent);
                         finish();
@@ -176,6 +178,9 @@ public class LoginActivity extends AppCompatActivity {
 
             if (GlobalFunctions.isEmailValid(email.getText().toString())) {
                 //Perform password checking
+
+                //Password must be x len
+
                 String passwordDigest = GlobalFunctions.getStringDigest(password.getText().toString());
                 String passwordDigestVerify = GlobalFunctions.getStringDigest(passwordVerify.getText().toString());
 

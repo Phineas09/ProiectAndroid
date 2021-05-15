@@ -1,6 +1,7 @@
 package ro.mta.proiect.tables;
 
 import android.os.Build;
+import android.os.Parcelable;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.RequiresApi;
@@ -12,11 +13,12 @@ import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.database.GenericTypeIndicator;
 import com.google.firebase.database.ValueEventListener;
 
+import java.io.Serializable;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 
-public class Users {
+public class Users implements Serializable {
 
     private static DatabaseReference databaseReference = FirebaseDatabase.getInstance().getReference().child("Users");
     private static long tableMaxId;
@@ -26,22 +28,33 @@ public class Users {
     String password;
     String email;
     String gender;
+    boolean isAdmin;
 
     public Users(String username, String password, String email, String gender) {
         this.username = username;
         this.password = password;
         this.email = email;
         this.gender = gender;
+        this.isAdmin = false;
+    }
+
+    public boolean isAdmin() {
+        return isAdmin;
     }
 
     public Users() {
     }
 
-    public Users(int id, String username, String password, String email, String gender) {
+    public Users(int id, String username, String password, String email, String gender, boolean isAdmin) {
         this.username = username;
         this.password = password;
         this.email = email;
         this.gender = gender;
+        this.isAdmin = isAdmin;
+    }
+
+    public void setAdmin(boolean admin) {
+        isAdmin = admin;
     }
 
     public static void onStart() {
@@ -122,6 +135,10 @@ public class Users {
 
     public void setGender(String gender) {
         this.gender = gender;
+    }
+
+    public void updateUser(String userId) {
+        databaseReference.child(userId).setValue(this);
     }
 
     @Override

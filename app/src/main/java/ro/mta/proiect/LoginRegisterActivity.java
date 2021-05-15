@@ -36,7 +36,7 @@ public class LoginRegisterActivity extends AppCompatActivity {
 
     }
 
-    public void  onLoginButtonClick(View view) throws NoSuchAlgorithmException {
+    public void onLoginButtonClick(View view) throws NoSuchAlgorithmException {
         //Toast.makeText(MainActivity.this, "Clicked the login Button", Toast.LENGTH_LONG).show();
         try {
             EditText email = findViewById(R.id.userEmail);
