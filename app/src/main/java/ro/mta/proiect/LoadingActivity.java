@@ -86,7 +86,7 @@ public class LoadingActivity extends AppCompatActivity {
             }
         };
         try {
-            extractChaptersJSON.execute(new URL("https://pastebin.com/raw/LUVrWQ2U"));
+            extractChaptersJSON.execute(new URL("https://pastebin.com/raw/9Gjev1Na"));
         } catch (MalformedURLException e) {
             e.printStackTrace();
         }

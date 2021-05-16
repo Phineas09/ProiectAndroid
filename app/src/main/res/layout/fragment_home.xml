@@ -93,7 +93,7 @@
                     android:layout_height="wrap_content"
                     android:layout_marginTop="6dp"
                     android:gravity="center_horizontal"
-                    android:text="Bluetooth"
+                    android:text="Bluetooth 1"
                     android:textAlignment="center"
                     android:textColor="@color/textColorSecondary"
                     android:textSize="18dp"
@@ -135,7 +135,7 @@
                     android:layout_height="wrap_content"
                     android:layout_marginTop="6dp"
                     android:gravity="center_horizontal"
-                    android:text="Bluetooth"
+                    android:text="Bluetooth 2"
                     android:textAlignment="center"
                     android:textColor="@color/textColorSecondary"
                     android:textSize="18dp"
@@ -161,7 +161,7 @@
             app:layout_rowWeight="1">
 
             <LinearLayout
-                android:layout_width="wrap_content"
+                android:layout_width="86dp"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center_horizontal|center_vertical"
                 android:layout_margin="16dp"
@@ -169,16 +169,16 @@
 
                 <ImageView
                     android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
+                    android:layout_height="113dp"
                     android:layout_gravity="center_horizontal"
-                    android:src="@drawable/ic_main_fragment_bluetooth" />
+                    android:src="@drawable/pmodbt2" />
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="6dp"
                     android:gravity="center_horizontal"
-                    android:text="Bluetooth"
+                    android:text="Pmod BT2"
                     android:textAlignment="center"
                     android:textColor="@color/textColorSecondary"
                     android:textSize="18dp"
@@ -211,16 +211,16 @@
 
                 <ImageView
                     android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
+                    android:layout_height="78dp"
                     android:layout_gravity="center_horizontal"
-                    android:src="@drawable/ic_main_fragment_bluetooth" />
+                    android:src="@drawable/adafruit_ble" />
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="6dp"
                     android:gravity="center_horizontal"
-                    android:text="Bluetooth"
+                    android:text="Adafruit Bluefruit LE"
                     android:textAlignment="center"
                     android:textColor="@color/textColorSecondary"
                     android:textSize="18dp"
@@ -255,16 +255,16 @@
 
                 <ImageView
                     android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
+                    android:layout_height="108dp"
                     android:layout_gravity="center_horizontal"
-                    android:src="@drawable/ic_main_fragment_bluetooth" />
+                    android:src="@drawable/zedboard" />
 
                 <TextView
-                    android:layout_width="wrap_content"
+                    android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="6dp"
                     android:gravity="center_horizontal"
-                    android:text="Bluetooth"
+                    android:text="ZedBoard"
                     android:textAlignment="center"
                     android:textColor="@color/textColorSecondary"
                     android:textSize="18dp"
@@ -296,17 +296,17 @@
                 android:orientation="vertical">
 
                 <ImageView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
+                    android:layout_width="115dp"
+                    android:layout_height="122dp"
                     android:layout_gravity="center_horizontal"
-                    android:src="@drawable/ic_main_fragment_bluetooth" />
+                    android:src="@drawable/raspberry_pi" />
 
                 <TextView
-                    android:layout_width="wrap_content"
+                    android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="6dp"
                     android:gravity="center_horizontal"
-                    android:text="Bluetooth"
+                    android:text="Raspberry Pi"
                     android:textAlignment="center"
                     android:textColor="@color/textColorSecondary"
                     android:textSize="18dp"

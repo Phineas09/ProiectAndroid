@@ -7,6 +7,7 @@ import android.view.ViewGroup;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
+import androidx.appcompat.widget.Toolbar;
 import androidx.fragment.app.Fragment;
 import androidx.viewpager.widget.ViewPager;
 
@@ -34,16 +35,24 @@ public class AdminFragment extends Fragment {
         return inflater.inflate(R.layout.fragment_admin, container, false);
     }
 
+
     @Override
     public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
 
+        Toolbar toolbar = getActivity().getWindow().findViewById(R.id.toolbar);
+        toolbar.setTitle("Admin Panel");
+
+
         tabLayout = getView().findViewById(R.id.fragment_admin_tab_layout);
         viewPager = getView().findViewById(R.id.fragment_admin_view_pager);
-        AdminViewPageAdapter adminViewPageAdapter = new AdminViewPageAdapter(getActivity().getSupportFragmentManager());
+        AdminViewPageAdapter adminViewPageAdapter = new AdminViewPageAdapter(getChildFragmentManager());
         adminViewPageAdapter.AddFragment(new AdminGraphFragment(), "Graphs");
         adminViewPageAdapter.AddFragment(new AdminUsersFragment(), "Users");
         viewPager.setAdapter(adminViewPageAdapter);
         tabLayout.setupWithViewPager(viewPager);
     }
+
+
+
 }

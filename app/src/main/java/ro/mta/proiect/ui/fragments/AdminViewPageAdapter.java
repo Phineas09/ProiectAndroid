@@ -7,14 +7,15 @@ import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentManager;
 import androidx.fragment.app.FragmentPagerAdapter;
+import androidx.fragment.app.FragmentStatePagerAdapter;
 
 import java.util.ArrayList;
 import java.util.List;
 
-public class AdminViewPageAdapter extends FragmentPagerAdapter {
+public class AdminViewPageAdapter extends FragmentStatePagerAdapter {
 
-    private final List<Fragment> fragmentList = new ArrayList<>();
-    private final List<String> fragmentListTitles = new ArrayList<>();
+    private List<Fragment> fragmentList = new ArrayList<>();
+    private List<String> fragmentListTitles = new ArrayList<>();
 
     public AdminViewPageAdapter(@NonNull FragmentManager fm) {
         super(fm);

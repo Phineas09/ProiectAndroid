@@ -26,7 +26,6 @@ public class UserDetails {
 
     private static DatabaseReference databaseReference = FirebaseDatabase.getInstance().getReference().child("UserDetails");
 
-
     String userId;
     String phoneNumber;
     Map<String, Integer> readChapters;
@@ -46,7 +45,9 @@ public class UserDetails {
     public UserDetails() {
     }
 
-
+    public static HashMap<String, UserDetails> getAllUsersDetails() {
+        return allUsersDetails;
+    }
 
     public static void onStart(String userID, Users currentUser) {
         //Make new instance
@@ -63,9 +64,9 @@ public class UserDetails {
                  * Get all user details from database for stats
                  */
 
-                for(DataSnapshot ds : dataSnapshot.getChildren()) {
+                for (DataSnapshot ds : dataSnapshot.getChildren()) {
                     UserDetails users = ds.getValue(UserDetails.class);
-                    if(users != null)
+                    if (users != null)
                         allUsersDetails.putIfAbsent(users.getUserId(), users);
                 }
 
@@ -108,12 +109,26 @@ public class UserDetails {
         return readChapters;
     }
 
+    public static UserDetails getUserDetailsById(String userId) {
+        if (userId != null) {
+            for (UserDetails userDetails : allUsersDetails.values()) {
+                if (userDetails.getUserId().equals(userId))
+                    return userDetails;
+            }
+        }
+        return null;
+    }
+
     public void updateDetails() {
         databaseReference.child(this.userId).setValue(this);
     }
 
     public void addReadChapter(String chapter) {
-        readChapters.put(chapter, 1);
+        if (readChapters.containsKey(chapter)) {
+            readChapters.put(chapter, readChapters.get(chapter) + 1);
+        } else {
+            readChapters.put(chapter, 1);
+        }
         updateDetails();
     }
 

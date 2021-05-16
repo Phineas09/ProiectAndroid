@@ -78,7 +78,7 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
         setContentView(R.layout.main_activity);
 
         toolbar = findViewById(R.id.toolbar);
-        toolbar.setTitle(R.string.applicationName);
+        toolbar.setTitle(R.string.applicationNameShort);
         setSupportActionBar(toolbar);
         mainDrawer = findViewById(R.id.drawer_layout);
 
@@ -126,7 +126,8 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
                             @Override
                             public void onClick(View v) {
                                 onBackPressed();
-                                toolbar.setTitle(R.string.applicationName);
+                                if(getSupportFragmentManager().getBackStackEntryCount() == 0)
+                                    toolbar.setTitle(R.string.applicationNameShort);
                             }
                         });
                     } else {
@@ -254,6 +255,9 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
                         .addToBackStack(null)
                         .setTransition(FragmentTransaction.TRANSIT_FRAGMENT_OPEN)
                         .commit();
+/*                getSupportFragmentManager().beginTransaction().replace(R.id.main_fragment_container,
+                        new AdminFragment()).commit();
+*/
                 break;
         }
 
@@ -295,6 +299,9 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
         //getSupportActionBar().setDisplayHomeAsUpEnabled(true);
     }
 
+    public static UserDetails getCurrentUserDetails() {
+        return currentUserDetails;
+    }
 
     /**
      * Profile fragment event lisners!

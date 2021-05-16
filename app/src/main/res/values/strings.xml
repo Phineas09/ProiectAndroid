@@ -1,7 +1,8 @@
 <resources>
     <string name="app_name">ProiectAndroid</string>
     <string name="already_have_an_account">Already Have An Account?</string>
-    <string name="applicationName">Instagram</string>
+    <string name="applicationName">ZedBoard BLE</string>
+    <string name="applicationNameShort">zLe</string>
     <string name="title_activity_main2">MainActivity</string>
     <string name="title_home">Login</string>
     <string name="title_dashboard">Register</string>
