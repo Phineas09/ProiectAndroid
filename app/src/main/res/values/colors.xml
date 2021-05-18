@@ -8,6 +8,10 @@
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
     <color name="colorPrimary">#27A38E</color>
+    <color name="colorPrimaryDrawerMenu">#27A38E</color>
     <color name="textColorPrimary">#FFFFFF</color>
     <color name="colorSecondary">#005a3a</color>
+    <color name="textColorSecondary">#000000</color>
+    <color name="colorThird">#f1b24b</color>
+    <color name="colorForth">#d68438</color>
 </resources>

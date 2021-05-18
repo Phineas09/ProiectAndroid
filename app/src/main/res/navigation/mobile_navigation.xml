@@ -3,23 +3,19 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/mobile_navigation"
-    app:startDestination="@+id/navigation_home">
+    app:startDestination="@+id/navigation_login">
 
     <fragment
-        android:id="@+id/navigation_home"
-        android:name="ro.mta.proiect.ui.home.HomeFragment"
+        android:id="@+id/navigation_login"
+        android:name="ro.mta.proiect.ui.fragments.LoginFragment"
         android:label="@string/title_home"
-        tools:layout="@layout/fragment_home" />
+        tools:layout="@layout/fragment_login" />
+
 
     <fragment
-        android:id="@+id/navigation_dashboard"
-        android:name="ro.mta.proiect.ui.dashboard.DashboardFragment"
+        android:id="@+id/navigation_register"
+        android:name="ro.mta.proiect.ui.fragments.RegisterFragment"
         android:label="@string/title_dashboard"
-        tools:layout="@layout/fragment_dashboard" />
+        tools:layout="@layout/fragment_register" />
 
-    <fragment
-        android:id="@+id/navigation_notifications"
-        android:name="ro.mta.proiect.ui.notifications.NotificationsFragment"
-        android:label="@string/title_notifications"
-        tools:layout="@layout/fragment_notifications" />
 </navigation>

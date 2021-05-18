@@ -1,11 +1,16 @@
 package ro.mta.proiect;
 
+import android.app.Application;
+
 import java.security.MessageDigest;
 import java.security.NoSuchAlgorithmException;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
 public class GlobalFunctions {
+
+    public static final String CURRENT_USER = "currentUser";
+    public static final String USER_ID = "userId";
 
     /**
      * method is used for checking valid email id format.
