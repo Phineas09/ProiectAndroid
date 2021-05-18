@@ -49,8 +49,8 @@ public class GoogleMaps extends Fragment implements OnMapReadyCallback, Location
     FloatingActionButton floatingActionButton;
     private FusedLocationProviderClient clientLocationProvider;
 
-
     public GoogleMaps() {
+
         isPermissionGranted = MainActivity.isIsPermissionGranted();
     }
 

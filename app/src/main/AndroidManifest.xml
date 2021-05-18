@@ -39,11 +39,6 @@
             </intent-filter>
 
         </activity>
-        <!--
-         <activity
-            android:name=".BottomNavigationActivity"
-            android:label="@string/title_activity_bottom_navigation"></activity>
-        -->
         <activity
             android:name=".LoginActivity"
             android:theme="@style/Theme.ProiectAndroid.NoActionBar" >

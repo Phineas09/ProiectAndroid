@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">ProiectAndroid</string>
+    <string name="app_name">ZedBoard BLE</string>
     <string name="already_have_an_account">Already Have An Account?</string>
     <string name="applicationName">ZedBoard BLE</string>
     <string name="applicationNameShort">zLe</string>

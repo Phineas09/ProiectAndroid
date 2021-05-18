@@ -14,8 +14,8 @@
         <ProgressBar
             android:id="@+id/fragment_admin_any_chart_progress_bar"
             android:layout_width="100dp"
-            android:layout_gravity = "center"
-            android:layout_height="100dp" />
+            android:layout_height="100dp"
+            android:layout_gravity="center" />
     </com.anychart.AnyChartView>
 
 </FrameLayout>
